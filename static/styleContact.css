@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Style+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 80vh; */
+    margin: 43px 0px;
+}
+
+h1{
+    text-align: center;
+    margin: 0px 0px;
+    font-family: 'Style Script', cursive;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px; 
+    width: 100%;
+}
+
+.myInput{
+    width: 50%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    border: 2px solid #f46a9feb;
+    border-radius: 7px;
+    color: #f34369eb;
+    outline: none;
+}
+
+#btn{
+    padding: 7px 14px;
+    font-size: 16px;
+    border: 2px solid #f15189;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background: #d50654;
+    font-family: 'Belanosima', sans-serif;
+    margin: 10px;
+}

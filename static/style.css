@@ -1,0 +1,209 @@
+/* Imported two font styles */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Style+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 15px;
+    font-size: 13px;
+    /* background-color: #d50654; */
+}
+
+#logo img{
+    height: 42px;
+    margin: 0 7px;
+    border: 1px solid ;
+    border-radius: 4px;
+    /* filter: invert(1); */
+    /* mix-blend-mode: multiply; */
+}
+
+#navbar{
+    font-family: 'Style Script', cursive;
+    background-color: #d50654;
+    padding: 6px 14px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1px 20px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+}
+
+#introSection{
+    padding-bottom: 40px;
+    font-family: 'Belanosima', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    background: center / cover no-repeat url(../static/backI.png);
+    height: 300px;
+    background-color:red;
+}
+
+#introSection #small{
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Style Script', cursive;
+    font-weight: bolder;
+}
+
+#missionSection{
+    font-family: 'Belanosima', sans-serif;
+    
+    /* background-color:#f46a9feb; */
+    width: 78%;
+    margin: auto;
+    display: block;
+}
+
+#missionSection h2{
+    text-align: center;
+    padding-top: 12px;
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 55%;
+    display: inline-block;
+    margin: 23px 10px;
+    max-width: 303px;
+    max-height: 187px;
+}
+
+.card h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 8px 10px 8px;
+    font-weight:light;
+    /* font-size: 18px; */
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 12px 0;
+}
+
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+    background-color: white;
+}
+
+.card-img img{
+    height: inherit;
+    background-color: white;
+    /* mix-blend-mode: multiply; */
+}
+
+.card-content{
+    padding-right: 14px;
+}
+
+#sponsorSection{
+    font-family: 'Belanosima', sans-serif;
+    /* min-height: 300px; */
+    background-color:#f46a9feb;
+}
+
+#sponsorSection h2{
+    text-align: center;
+    padding: 12px 0;
+}
+
+#sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 15px 22px;
+}
+
+.spImage{
+    width: 12%;
+    margin: 0 20px;
+    border-radius: 22px;
+}
+
+#footer{
+    font-family: 'Belanosima', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(26, 25, 25);
+}
+
+@media screen and (max-width:480px){
+    #sponsors{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .spImage{
+        width: 30%;
+        margin: 5px 20px;
+        border-radius: 22px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #navbar ul{
+        flex-direction: column;
+    }
+
+    #logo{
+        padding-bottom: 7px;
+    }
+
+    #navbar ul li{
+        padding-bottom: 7px;
+    }
+
+    /* #missionSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
